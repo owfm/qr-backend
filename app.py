@@ -27,7 +27,7 @@ def generateQRcodes(data):
     for datum in data:
         qr = pyqrcode.create(datum)
         qr.svg("static/{}.svg".format(datum), scale=6)
-    return ["static/{}.svg".format(datum) for datum in data]
+    return ["{}.svg".format(datum) for datum in data]
 
 
 def json_response(payload, status=200):
