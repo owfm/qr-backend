@@ -7,8 +7,14 @@ import logging
 logging.getLogger().setLevel(logging.INFO)
 
 
-app = Flask(__name__, static_url_path='/static')
+app = Flask(
+    __name__, static_url_path='https://qr-backend-stylus.herokuapp.com/static')
 CORS(app)
+
+
+@app.route('/test')
+def test():
+    return json_response('hello')
 
 
 @app.route('/qr', methods=["POST"])
