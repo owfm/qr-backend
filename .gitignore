@@ -7,7 +7,7 @@ __pycache__/
 *.so
 
 # ignore generated svg files
-*.svg
+# *.svg
 
 # Distribution / packaging
 .Python
