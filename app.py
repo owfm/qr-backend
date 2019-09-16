@@ -1,8 +1,6 @@
-from botocore.exceptions import ClientError
-import boto3
 import sys
 import pyqrcode
-from flask import Flask, request, json, send_from_directory
+from flask import Flask, request, json
 from flask_cors import CORS
 from flask import jsonify
 import logging
