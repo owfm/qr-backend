@@ -8,7 +8,7 @@ logging.getLogger().setLevel(logging.INFO)
 
 
 app = Flask(
-    __name__, static_url_path='https://qr-backend-stylus.herokuapp.com/static')
+    __name__, static_url_path='/static')
 CORS(app)
 
 
